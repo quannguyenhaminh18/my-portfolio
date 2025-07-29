@@ -1,12 +1,13 @@
 {
   "me": {
-    "sortName": "Quân Nguyễn",
-    "fullName": "Nguyễn Hà Minh Quân"
+    "sortName": "Quan Nguyen",
+    "fullName": "Quan Nguyen Ha Minh"
   },
   "header": {
-    "about": "Giới thiệu",
-    "contact": "Liên hệ",
-    "project": "Dự án"
+    "about": "About",
+    "contact": "Contact",
+    "project": "Projects",
+    "blog": "Blog"
   },
   "languages": {
     "vietnamese": "Tiếng Việt",
