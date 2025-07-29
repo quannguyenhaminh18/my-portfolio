@@ -1,11 +1,10 @@
 "use client";
 
-// import HeroSection from "@/components/HeroSection";
-// import ContactSection from "@/components/ContactSection";
-// import ProjectSection from "@/components/ProjectSection";
 import React from "react";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function HomePage() {
   return (
@@ -13,9 +12,9 @@ export default function HomePage() {
           className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <Header/>
-          {/*<HeroSection/>*/}
+          <HeroSection/>
           {/*<ProjectSection/>*/}
-          {/*<ContactSection/>*/}
+          <ContactSection/>
           <Footer/>
         </main>
       </div>

@@ -14,11 +14,12 @@
     "english": "English"
   },
   "hero": {
+    "description": "A Full Stack Web Developer.."
   },
   "projects": {
   },
   "contact": {
     "title": "Thông tin liên hệ"
   },
-  "copyright": "Bảo lưu mọi quyền."
+  "copyright": "All right reserved."
 }
