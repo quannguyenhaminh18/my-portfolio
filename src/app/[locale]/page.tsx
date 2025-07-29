@@ -3,9 +3,9 @@
 // import HeroSection from "@/components/HeroSection";
 // import ContactSection from "@/components/ContactSection";
 // import ProjectSection from "@/components/ProjectSection";
-// import Footer from "@/components/Footer";
 import React from "react";
 import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 
 export default function HomePage() {
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
           {/*<HeroSection/>*/}
           {/*<ProjectSection/>*/}
           {/*<ContactSection/>*/}
-          {/*<Footer/>*/}
+          <Footer/>
         </main>
       </div>
   );
