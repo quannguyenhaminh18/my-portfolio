@@ -6,6 +6,7 @@ import {File} from "lucide-react";
 import {useTranslations} from "next-intl";
 import {Button} from "@/components/ui/button";
 import {general} from "@/constants/general";
+import SkillBoard from "@/components/SkillBoard";
 
 const HeroSection = () => {
     const t = useTranslations();
@@ -85,7 +86,7 @@ const HeroSection = () => {
             </div>
             <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
             </div>
-            {/*<SkillBoard/>*/}
+            <SkillBoard/>
         </section>
     );
 };

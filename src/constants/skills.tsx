@@ -5,43 +5,54 @@ import React, {ReactNode} from "react";
 export type Skill = {
     title: string;
     icon: ReactNode;
+    bgColor: string;
 };
 
 export const SKILLS = {
     next: {
         title: "Next.js",
-        icon: <RiNextjsFill/>,
+        icon: <RiNextjsFill />,
+        bgColor: "bg-black",
     },
     node: {
         title: "Node.js",
-        icon: <RiNodejsFill/>,
+        icon: <RiNodejsFill />,
+        bgColor: "bg-green-600",
     },
     mysql: {
         title: "MySQL",
-        icon: <SiMysql/>,
+        icon: <SiMysql />,
+        bgColor: "bg-[#00758F]",
     },
     shadcn: {
-        title: "ShanCN UI",
-        icon: <SiShadcnui/>,
+        title: "ShadCN UI",
+        icon: <SiShadcnui />,
+        bgColor: "bg-zinc-700",
     },
     tailwind: {
         title: "Tailwind",
-        icon: <SiTailwindcss/>,
+        icon: <SiTailwindcss />,
+        bgColor: "bg-cyan-400",
     },
     docker: {
         title: "Docker",
-        icon: <SiDocker/>,
+        icon: <SiDocker />,
+        bgColor: "bg-blue-500",
     },
     js: {
         title: "JavaScript",
-        icon: <SiJavascript/>,
+        icon: <SiJavascript />,
+        bgColor: "bg-yellow-300",
     },
     ts: {
         title: "TypeScript",
-        icon: <SiTypescript/>,
+        icon: <SiTypescript />,
+        bgColor: "bg-blue-600",
     },
     react: {
         title: "React.js",
-        icon: <RiReactjsFill/>,
+        icon: <RiReactjsFill />,
+        bgColor: "bg-cyan-300",
     },
 };
+
