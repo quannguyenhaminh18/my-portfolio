@@ -1,0 +1,23 @@
+{
+  "me": {
+    "sortName": "Quân Nguyễn",
+    "fullName": "Nguyễn Hà Minh Quân"
+  },
+  "header": {
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "project": "Dự án"
+  },
+  "languages": {
+    "vietnamese": "Tiếng Việt",
+    "english": "English"
+  },
+  "hero": {
+  },
+  "projects": {
+  },
+  "contact": {
+    "title": "Thông tin liên hệ"
+  },
+  "copyright": "Bảo lưu mọi quyền."
+}
