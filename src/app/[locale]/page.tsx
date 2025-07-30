@@ -5,6 +5,7 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ProjectSection from "@/components/sections/ProjectSection";
 
 export default function HomePage() {
   return (
@@ -13,7 +14,7 @@ export default function HomePage() {
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <Header/>
           <HeroSection/>
-          {/*<ProjectSection/>*/}
+          <ProjectSection/>
           <ContactSection/>
           <Footer/>
         </main>
