@@ -10,7 +10,6 @@ interface LenisProps {
 
 function SmoothScroll({ children, isInsideModal = false }: LenisProps) {
   const lenis = useLenis(({ scroll }) => {
-    // called every scroll
   });
 
   useEffect(() => {
