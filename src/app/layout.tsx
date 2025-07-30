@@ -11,8 +11,6 @@ import Footer from "@/components/footer/footer";
 import Script from "next/script";
 import Preloader from "@/components/preloader";
 import {config} from "@/data/config";
-import SocketContextProvider from "@/contexts/socketio";
-import RemoteCursors from "@/components/realtime/remote-cursors";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -77,14 +75,11 @@ export default function RootLayout({
                 quantity={100}
             />
             <Preloader>
-                <SocketContextProvider>
-                    <RemoteCursors/>
                     <TooltipProvider>
                         <Header/>
                         {children}
                         <Footer/>
                     </TooltipProvider>
-                </SocketContextProvider>
                 <Toaster/>
                 <ElasticCursor/>
             </Preloader>
