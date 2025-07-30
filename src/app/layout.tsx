@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Archivo_Black} from "next/font/google";
 import "./globals.css";
-import ElasticCursor from "@/components/ui/ElasticCursor";
 import Particles from "@/components/Particles";
 import {ThemeProvider} from "@/components/theme-provider";
 import Header from "@/components/header/header";
@@ -62,7 +61,6 @@ export default function RootLayout({
                 src={process.env.UMAMI_DOMAIN}
                 data-website-id={process.env.UMAMI_SITE_ID}
             ></Script>
-            {/* <Analytics /> */}
         </head>
         <body>
         <ThemeProvider
@@ -81,7 +79,6 @@ export default function RootLayout({
                         <Footer/>
                     </TooltipProvider>
                 <Toaster/>
-                <ElasticCursor/>
             </Preloader>
         </ThemeProvider>
         </body>
