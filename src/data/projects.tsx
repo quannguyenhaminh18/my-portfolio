@@ -1,4 +1,4 @@
-import AceTernityLogo from "@/components/logos/aceternity";
+import AceEternityLogo from "@/components/logo/aceternity";
 import SlideShow from "@/components/slide-show";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyP } from "@/components/ui/typography";
@@ -131,7 +131,7 @@ const PROJECT_SKILLS = {
     title: "Aceternity",
     bg: "black",
     fg: "white",
-    icon: <AceTernityLogo />,
+    icon: <AceEternityLogo />,
   },
   tailwind: {
     title: "Tailwind",
