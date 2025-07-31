@@ -4,11 +4,9 @@ import "./globals.css";
 import Particles from "@/components/Particles";
 import {ThemeProvider} from "@/components/theme-provider";
 import Header from "@/components/header/header";
-import {Toaster} from "@/components/ui/toaster";
-import {TooltipProvider} from "@/components/ui/tooltip";
+import {Toaster} from "sonner";
 import Footer from "@/components/footer/footer";
 import Script from "next/script";
-import Preloader from "@/components/preloader";
 import {config} from "@/data/config";
 import React from "react";
 
@@ -72,14 +70,10 @@ export default function RootLayout({
                 className="fixed inset-0 -z-10 animate-fade-in"
                 quantity={100}
             />
-            <Preloader>
-                    <TooltipProvider>
-                        <Header/>
-                        {children}
-                        <Footer/>
-                    </TooltipProvider>
-                <Toaster/>
-            </Preloader>
+            <Header/>
+            {children}
+            <Footer/>
+            <Toaster position="top-center" richColors/>
         </ThemeProvider>
         </body>
         </html>

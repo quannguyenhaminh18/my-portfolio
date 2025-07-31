@@ -10,14 +10,12 @@ import {
 } from "../ui/animated-modal";
 import {FloatingDock} from "../ui/floating-dock";
 import Link from "next/link";
-
-import SmoothScroll from "../smooth-scroll";
 import projects, {Project} from "@/data/projects";
 import {cn} from "@/lib/utils";
 
 const ProjectsSection = () => {
     return (
-        <section id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
+        <section id="projects" className="max-w-7xl mx-auto md:h-[100vh]">
             <Link href={"#projects"}>
                 <h2
                     className={cn(
@@ -65,11 +63,9 @@ const ProjectModal = ({project}: { project: Project }) => {
                     </div>
                 </ModalTrigger>
                 <ModalBody className="md:max-w-4xl md:max-h-[80%] overflow-auto">
-                    <SmoothScroll isInsideModal={true}>
-                        <ModalContent>
-                            <ProjectContents project={project}/>
-                        </ModalContent>
-                    </SmoothScroll>
+                    <ModalContent>
+                        <ProjectContents project={project}/>
+                    </ModalContent>
                     <ModalFooter className="gap-4">
                         <button
                             className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">

@@ -1,35 +1,23 @@
 import React from "react";
-import Link from "next/link";
-import { footer } from "./config";
-import { Button } from "../ui/button";
 import SocialMediaButtons from "../social/social-media-icons";
 import { config } from "@/data/config";
 
 function Footer() {
-  const year = new Date().getFullYear();
-  return (
-    <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-border px-4 py-6 sm:flex-row md:px-6 sm:justify-between">
-      <p className="text-xs text-gray-500 dark:text-gray-400">
-        © {year} {config.author}. All rights reserved.
-      </p>
-      <SocialMediaButtons />
-      <nav className="flex gap-4 sm:gap-6 z-10">
-        {footer.map((link, index) => {
-          const { title, href } = link;
+    const year = new Date().getFullYear();
 
-          return (
-            <Link
-              className="text-xs underline-offset-4 hover:underline"
-              href={href}
-              key={`l_${index}`}
-            >
-              <Button variant={"link"}>{title}</Button>
-            </Link>
-          );
-        })}
-      </nav>
-    </footer>
-  );
+    return (
+        <footer className="flex flex-col items-center justify-center w-full gap-4 border-t border-border px-4 py-6 md:px-6 sm:flex-row sm:justify-between">
+            {/* Bản quyền */}
+            <p className="text-xs text-gray-500 dark:text-gray-400 text-center sm:text-left">
+                © {year} {config.author}. All rights reserved.
+            </p>
+
+            {/* Nút mạng xã hội */}
+            <div className="flex gap-3">
+                <SocialMediaButtons />
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

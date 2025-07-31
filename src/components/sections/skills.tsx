@@ -6,8 +6,8 @@ import {KeyBoard} from "@/components/KeyBoard";
 
 const SkillsSection = () => {
     return (
-        <section id="skills" className="w-full h-screen md:h-[150dvh]">
-            <div className="top-[70px] mb-96">
+        <section id="skills" className="w-full md:h-[50vh]">
+            <div className="top-[70px]">
                 <Link href={"#skills"}>
                     <BoxReveal width="100%">
                         <h2
