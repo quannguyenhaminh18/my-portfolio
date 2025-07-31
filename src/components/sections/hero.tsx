@@ -104,7 +104,8 @@ const HeroSection = () => {
                         </>
                     )}
                 </div>
-                <div className="grid col-span-1"></div>
+                <div className="grid col-span-1">
+                </div>
             </div>
             <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
             </div>
