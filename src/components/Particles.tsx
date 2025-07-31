@@ -1,7 +1,6 @@
 "use client";
 
-import React, {useRef, useEffect} from "react";
-import {useMousePosition} from "@/utils/mouse";
+import React, {useEffect, useRef} from "react";
 import {cn} from "@/lib/utils";
 
 interface ParticlesProps {
@@ -21,8 +20,7 @@ export default function Particles({
     const canvasContainerRef = useRef<HTMLDivElement>(null);
     const context = useRef<CanvasRenderingContext2D | null>(null);
     const circles = useRef<any[]>([]);
-    const mousePosition = useMousePosition();
-    const mouse = useRef<{ x: number; y: number }>({x: 0, y: 0});
+    useRef<{ x: number; y: number }>({x: 0, y: 0});
     const canvasSize = useRef<{ w: number; h: number }>({w: 0, h: 0});
     const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
@@ -127,8 +125,7 @@ export default function Particles({
 
     const drawParticles = () => {
         clearContext();
-        const particleCount = quantity;
-        for (let i = 0; i < particleCount; i++) {
+        for (let i = 0; i < quantity; i++) {
             const circle = circleParams();
             drawCircle(circle);
         }

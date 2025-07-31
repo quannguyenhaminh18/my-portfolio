@@ -9,12 +9,13 @@ import {
     useTransform,
 } from "framer-motion";
 import React, {useEffect, useRef, useState} from "react";
+import {Skill} from "@/data/projects";
 
 export const FloatingDock = ({
                                  items,
                                  className,
                              }: {
-    items: { title: string; icon: string }[];
+    items: Skill[];
     className?: string;
 }) => {
     let mouseX = useMotionValue(Infinity);
@@ -57,8 +58,8 @@ export const FloatingDock = ({
                     className
                 )}
             >
-                {items.map((item) => (
-                    <IconContainer mouseX={mouseX} key={item.title} {...item} />
+                {items.map((item, index) => (
+                    <IconContainer mouseX={mouseX} key={index}{...item} />
                 ))}
             </motion.div>
             {showHint && (

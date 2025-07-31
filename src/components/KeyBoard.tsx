@@ -10,6 +10,7 @@ export const KeyBoard = () => {
                 gap: "1.5rem",
                 justifyContent: "center",
                 alignItems: "center",
+                marginTop: "100px",
             }}
         >
             {Object.entries(PROJECT_SKILLS).map(([key, skill]) => (
@@ -32,7 +33,7 @@ export const KeyBoard = () => {
                             label.style.opacity = "1";
                             label.style.transform = "translateY(0)";
                         }
-                        e.currentTarget.style.transform = "scale(0.92)";
+                        e.currentTarget.style.transform = "scale(2)";
                     }}
                     onMouseLeave={(e) => {
                         const label = e.currentTarget.querySelector(".skill-label") as HTMLElement;

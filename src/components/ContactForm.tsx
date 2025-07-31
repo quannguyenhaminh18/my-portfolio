@@ -32,7 +32,7 @@ const ContactForm = () => {
                 }),
             });
             const data = await res.json();
-            if (data.error) throw new Error(data.error);
+            if (data.error) console.log(data.error);
             toast.success("Thank you! I'll get back to you soon.");
             setLoading(false);
             setFullName("");
@@ -76,7 +76,7 @@ const ContactForm = () => {
             <div className="grid w-full gap-1.5 mb-4">
                 <Label htmlFor="content">Your Message</Label>
                 <Textarea
-                    placeholder="Tell me about about your project,"
+                    placeholder="Tell me about about your project..."
                     id="content"
                     required
                     value={message}

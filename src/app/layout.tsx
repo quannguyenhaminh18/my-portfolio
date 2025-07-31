@@ -52,13 +52,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={[archivoBlack.className].join(" ")}>
+        <html lang="en" className={[archivoBlack.className].join(" ")} suppressHydrationWarning>
         <head>
             <Script
                 defer
                 src={process.env.UMAMI_DOMAIN}
                 data-website-id={process.env.UMAMI_SITE_ID}
-            ></Script>
+            ></Script><title></title>
         </head>
         <body>
         <ThemeProvider

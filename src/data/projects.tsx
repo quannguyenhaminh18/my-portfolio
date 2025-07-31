@@ -40,7 +40,7 @@ const ProjectsLinks = ({live, repo}: { live: string; repo?: string }) => {
 
 export type Skill = {
     title: string;
-    icon: string; // URL to SVG
+    icon: string;
 };
 
 export const PROJECT_SKILLS: Record<string, Skill> = {
@@ -48,45 +48,17 @@ export const PROJECT_SKILLS: Record<string, Skill> = {
         title: "Next.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     },
-    chakra: {
-        title: "Chakra UI",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/chakraui/chakraui-original.svg", // custom unofficial
-    },
     node: {
         title: "Node.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
-    python: {
-        title: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    },
-    prisma: {
-        title: "Prisma",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
-    },
-    postgres: {
-        title: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    },
-    mongo: {
-        title: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    },
-    express: {
-        title: "Express",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    },
-    reactQuery: {
-        title: "React Query",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/reactquery/reactquery-original.svg", // unofficial
+    mysql: {
+        title: "MySQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
     },
     shadcn: {
         title: "ShadCN UI",
         icon: "https://raw.githubusercontent.com/shadcn/ui/main/apps/www/public/favicon.ico", // placeholder
-    },
-    aceternity: {
-        title: "Aceternity",
-        icon: "/icons/aceternity.svg", // custom, assumed local
     },
     tailwind: {
         title: "Tailwind",
@@ -96,17 +68,9 @@ export const PROJECT_SKILLS: Record<string, Skill> = {
         title: "Docker",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
     },
-    yjs: {
-        title: "Y.js",
-        icon: "https://raw.githubusercontent.com/yjs/yjs/main/logo.svg", // from official repo
-    },
     firebase: {
         title: "Firebase",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    },
-    sockerio: {
-        title: "Socket.io",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
     },
     js: {
         title: "JavaScript",
@@ -116,25 +80,9 @@ export const PROJECT_SKILLS: Record<string, Skill> = {
         title: "TypeScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     },
-    vue: {
-        title: "Vue.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    },
     react: {
         title: "React.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    sanity: {
-        title: "Sanity",
-        icon: "https://www.sanity.io/static/images/logo_red.svg", // official logo
-    },
-    spline: {
-        title: "Spline",
-        icon: "https://uploads-ssl.webflow.com/5ff3e0846c61700d7e6c5d90/60803b9d1670d15cbfc8232f_Logo%20Spline.svg",
-    },
-    gsap: {
-        title: "GSAP",
-        icon: "https://greensock.com/uploads/monthly_2020_03/gsap-logo.svg.139d9b1526e51b3455e7fefc90980333.svg",
     },
     framerMotion: {
         title: "Framer Motion",

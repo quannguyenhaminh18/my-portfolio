@@ -31,7 +31,7 @@ const HeroSection = () => {
                             </p>
                         </BlurIn>
                         <BlurIn delay={1}>
-                            <h1
+                            <p
                                 className={cn(
                                     "font-thin text-6xl text-transparent text-slate-800 ml-1 text-left",
                                     "cursor-default text-edge-outline font-display sm:text-7xl md:text-9xl "
@@ -40,7 +40,7 @@ const HeroSection = () => {
                                 {config.author.split(" ")[0]}
                                 <br className="md:block hidden"/>
                                 {config.author.split(" ")[1]}
-                            </h1>
+                            </p>
                         </BlurIn>
                         <BlurIn delay={1.2}>
                             <p
