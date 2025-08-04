@@ -24,7 +24,7 @@ const ProjectsSection = () => {
                         "dark:bg-gradient-to-b dark:from-white/80 dark:to-white/20 dark:bg-opacity-50 mb-32"
                     )}
                 >
-                    Projects
+                    PROJECTS
                 </h2>
             </Link>
             <div className="grid grid-cols-1 md:grid-cols-3">

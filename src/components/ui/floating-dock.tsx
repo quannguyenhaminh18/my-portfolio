@@ -8,7 +8,7 @@ import {
     useSpring,
     useTransform,
 } from "framer-motion";
-import React, {useEffect, useRef, useState} from "react";
+import React, {useRef, useState} from "react";
 import {Skill} from "@/data/projects";
 
 export const FloatingDock = ({
@@ -19,37 +19,13 @@ export const FloatingDock = ({
     className?: string;
 }) => {
     let mouseX = useMotionValue(Infinity);
-    const [showHint, setShowHint] = useState(true);
-    const timer = useRef<NodeJS.Timeout>();
-    const controls = useAnimation();
-    useEffect(() => {
-        if (showHint) {
-            controls.start({
-                opacity: [0, 1, 1, 0],
-                x: [-50, -50, 50, 50],
-                transition: {
-                    duration: 2,
-                    repeatDelay: 2,
-                    delay: 2,
-                    times: [0, 0.2, 0.8, 1],
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                },
-            });
-        } else {
-            controls.stop();
-        }
-        return () => {
-            controls.stop();
-            clearInterval(timer.current);
-        };
-    }, [showHint]);
+    useRef<NodeJS.Timeout>();
+    useAnimation();
     return (
         <div className="relative h-fit flex items-center justify-center">
             <motion.div
                 onMouseMove={(e) => {
                     mouseX.set(e.pageX);
-                    setShowHint(false);
                 }}
                 onMouseLeave={() => mouseX.set(Infinity)}
                 className={cn(
@@ -62,27 +38,6 @@ export const FloatingDock = ({
                     <IconContainer mouseX={mouseX} key={index}{...item} />
                 ))}
             </motion.div>
-            {showHint && (
-                <div
-                    className="z-10 absolute t-0 w-full h-full pointer-events-none"
-                    onMouseEnter={() => setShowHint(false)}
-                >
-                    <div
-                        className={cn(
-                            "relative w-full h-full flex items-center justify-center"
-                        )}
-                    >
-                        <motion.div
-                            className={cn(
-                                "w-5 h-5 border-2 left-[50%] top-0 border-black dark:border-white rounded-full",
-                                "translate-x-[-50px]"
-                            )}
-                            initial={{opacity: 0, x: -50}}
-                            animate={controls}
-                        ></motion.div>
-                    </div>
-                </div>
-            )}
         </div>
     );
 };

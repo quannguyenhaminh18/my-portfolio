@@ -68,10 +68,6 @@ export const PROJECT_SKILLS: Record<string, Skill> = {
         title: "Docker",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
     },
-    firebase: {
-        title: "Firebase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    },
     js: {
         title: "JavaScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -87,10 +83,6 @@ export const PROJECT_SKILLS: Record<string, Skill> = {
     framerMotion: {
         title: "Framer Motion",
         icon: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg",
-    },
-    supabase: {
-        title: "Supabase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
     },
 };
 
