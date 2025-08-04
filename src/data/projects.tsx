@@ -109,17 +109,9 @@ const projects: Project[] = [
             frontend: [
                 PROJECT_SKILLS.ts,
                 PROJECT_SKILLS.next,
-                PROJECT_SKILLS.chakra,
-                PROJECT_SKILLS.reactQuery,
-                PROJECT_SKILLS.firebase,
             ],
             backend: [
                 PROJECT_SKILLS.node,
-                PROJECT_SKILLS.express,
-                PROJECT_SKILLS.prisma,
-                PROJECT_SKILLS.python,
-                PROJECT_SKILLS.postgres,
-                PROJECT_SKILLS.sockerio,
             ],
         },
         live: "https://www.codingducks.xyz/",
@@ -130,7 +122,7 @@ const projects: Project[] = [
                     <TypographyP className="font-mono text-2xl text-center">
                         Coding ducks = LeetCode + CodePen + CSS Battles
                     </TypographyP>
-                    <TypographyP className="font-mono ">
+                    <TypographyP className="font-mono">
                         Coding Ducks is your coding dojo — where you level up your skills,
                         battle in real-time code duels, and earn badges like a true code
                         warrior. Track your progress, flex your brain, and climb the
@@ -212,14 +204,9 @@ const projects: Project[] = [
             frontend: [
                 PROJECT_SKILLS.js,
                 PROJECT_SKILLS.next,
-                PROJECT_SKILLS.chakra,
-                PROJECT_SKILLS.vue,
             ],
             backend: [
                 PROJECT_SKILLS.node,
-                PROJECT_SKILLS.express,
-                PROJECT_SKILLS.prisma,
-                PROJECT_SKILLS.postgres,
                 PROJECT_SKILLS.docker,
             ],
         },
@@ -294,7 +281,6 @@ const projects: Project[] = [
             frontend: [
                 PROJECT_SKILLS.ts,
                 PROJECT_SKILLS.next,
-                PROJECT_SKILLS.aceternity,
                 PROJECT_SKILLS.tailwind,
             ],
             backend: [PROJECT_SKILLS.sanity],
@@ -362,10 +348,8 @@ const projects: Project[] = [
                 PROJECT_SKILLS.ts,
                 PROJECT_SKILLS.next,
                 PROJECT_SKILLS.shadcn,
-                PROJECT_SKILLS.aceternity,
                 PROJECT_SKILLS.framerMotion,
                 PROJECT_SKILLS.tailwind,
-                PROJECT_SKILLS.spline,
             ],
             backend: [],
         },
@@ -424,8 +408,8 @@ const projects: Project[] = [
         live: "https://ghostchat.vercel.app",
         github: "https://github.com/Naresh-Khatri/GhostChat",
         skills: {
-            frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.chakra],
-            backend: [PROJECT_SKILLS.supabase],
+            frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next],
+            backend: [],
         },
         get content() {
             return (
@@ -459,11 +443,9 @@ const projects: Project[] = [
         screenshots: ["1.png"],
         live: "https://naresh-khatri.github.io/JNTUA-result-analyser-spa/#/",
         skills: {
-            frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.vue],
+            frontend: [PROJECT_SKILLS.js],
             backend: [
                 PROJECT_SKILLS.node,
-                PROJECT_SKILLS.mongo,
-                PROJECT_SKILLS.express,
                 PROJECT_SKILLS.docker,
             ],
         },

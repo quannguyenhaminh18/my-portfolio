@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
 import { config } from "@/data/config";
 import {links} from "@/components/header/config";
 
@@ -23,26 +22,29 @@ const Header = ({ loader }: HeaderProps) => {
             duration: 0.8,
           }}
       >
-        <div className="relative flex items-center justify-between text-[12px] sm:text-[15px] font-normal lowercase">
+        <div className="relative flex items-center justify-between text-[12px] sm:text-[15px] font-normal">
           {/* Left: Author */}
-          <Link href="/" className="flex-shrink-0">
-            <Button variant="link" className="text-md px-2">
-              {config.author}
-            </Button>
-          </Link>
+            <Link
+                href="/"
+                className="inline-flex items-center justify-center text-sm font-medium text-primary underline-offset-4 hover:underline cursor-can-hover px-2"
+            >
+                {config.author}
+            </Link>
 
-          {/* Center: Links */}
-          <div className="flex gap-4 sm:gap-6 justify-center items-center mx-auto">
-            {links.map((link, index) => (
-                <Link key={index} href={link.href}>
-                  <Button variant="link" className="text-md px-2">
-                    {link.title}
-                  </Button>
-                </Link>
-            ))}
-          </div>
+            {/* Center: Links */}
+            <div className="flex gap-4 sm:gap-6 justify-center items-center mx-auto">
+                {links.map((link, index) => (
+                    <Link
+                        key={index}
+                        href={link.href}
+                        className="inline-flex items-center justify-center text-sm font-medium text-primary underline-offset-4 hover:underline cursor-can-hover text-md px-2"
+                    >
+                        {link.title}
+                    </Link>
+                ))}
+            </div>
 
-          {/* Right: Empty or future actions (e.g., theme toggle, profile, etc.) */}
+            {/* Right: Empty or future actions (e.g., theme toggle, profile, etc.) */}
           <div className="w-[80px] sm:w-[100px]" /> {/* Placeholder to balance layout */}
         </div>
       </motion.header>

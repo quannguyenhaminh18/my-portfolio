@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import {Archivo_Black} from "next/font/google";
 import "./globals.css";
 import Particles from "@/components/Particles";
-import {ThemeProvider} from "@/components/theme-provider";
+import {ThemeProvider} from "next-themes";
 import Header from "@/components/header/header";
 import {Toaster} from "sonner";
 import Footer from "@/components/footer/footer";
@@ -29,12 +29,6 @@ export const metadata: Metadata = {
         ],
         type: "website",
     },
-    twitter: {
-        card: "summary_large_image",
-        title: config.title,
-        description: config.description.short,
-        images: [config.ogImg],
-    },
     robots: {
         index: true,
         follow: true,
@@ -46,11 +40,7 @@ const archivoBlack = Archivo_Black({
     weight: "400",
 });
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className={[archivoBlack.className].join(" ")} suppressHydrationWarning>
         <head>

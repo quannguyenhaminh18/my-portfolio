@@ -3,7 +3,6 @@ import {
     AnimatePresence,
     MotionValue,
     motion,
-    useAnimation,
     useMotionValue,
     useSpring,
     useTransform,
@@ -19,8 +18,6 @@ export const FloatingDock = ({
     className?: string;
 }) => {
     let mouseX = useMotionValue(Infinity);
-    useRef<NodeJS.Timeout>();
-    useAnimation();
     return (
         <div className="relative h-fit flex items-center justify-center">
             <motion.div

@@ -15,7 +15,7 @@ const links: Link[] = [
   },
   {
     title: 'Blogs',
-    href: '/blogs',
+    href: '/#blogs',
   },
   {
     title: 'Contact',
